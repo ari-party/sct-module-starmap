@@ -1,0 +1,68 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  scribunto-bundler:
+    specifier: ^0.1.2
+    version: 0.1.2
+
+packages:
+
+  /2dec@1.0.5:
+    resolution: {integrity: sha512-vvSukjA2zR2eTRy/TqpIliCS9GccGPEGPgRLl+JXr3XvH2lzTwNW4jO4GAjnv+F22wK0cCiD7nZ4pX0pvHd1jg==}
+    dev: false
+
+  /@prettier/plugin-lua@0.0.3(prettier@3.2.4):
+    resolution: {integrity: sha512-Fn7rf/9BTisEShgSN7iSKxgBo3MkHnAptNI7+4JC7E3wi2ElfzcR194QswblbY6X0fTdaHz3yG0GQcuwtxZKoQ==}
+    engines: {node: '>=10.13.0'}
+    peerDependencies:
+      prettier: '>=2.0.0'
+    dependencies:
+      luaparse: 0.2.1
+      prettier: 3.2.4
+    dev: false
+
+  /@robertsspaceindustries/sub@1.0.8:
+    resolution: {integrity: sha512-xXr+r4rxnq9zt2+HnWVxGZzx9x+2v0KHr3Mvu3dlI57Ygx+HYYNSbB7+bwQQwKZo472ZEbWec8W48zvK4jlJfA==}
+    dev: false
+
+  /commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
+    engines: {node: '>=16'}
+    dev: false
+
+  /klaw@4.1.0:
+    resolution: {integrity: sha512-1zGZ9MF9H22UnkpVeuaGKOjfA2t6WrfdrJmGjy16ykcjnKQDmHVX+KI477rpbGevz/5FD4MC3xf1oxylBgcaQw==}
+    engines: {node: '>=14.14.0'}
+    dev: false
+
+  /luaparse@0.2.1:
+    resolution: {integrity: sha512-VKBcryd5nJte4ZNR29NOk8F/UkMipjeb4yoxcSS51z6QAzg9DXUC2WsfLniS0J1eh3pr/ZL3e9ha6V8fhoLbBQ==}
+    hasBin: true
+    dev: false
+
+  /picocolors@1.0.0:
+    resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
+    dev: false
+
+  /prettier@3.2.4:
+    resolution: {integrity: sha512-FWu1oLHKCrtpO1ypU6J0SbK2d9Ckwysq6bHj/uaCP26DxrPpppCLQRGVuqAxSTvhF00AcvDRyYrLNW7ocBhFFQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
+
+  /scribunto-bundler@0.1.2:
+    resolution: {integrity: sha512-l1xg0jvQqgpwoXCNDzYQGsoNoDsx9Z2wveGmue/AqM2W8FLcHIO4sv1kwqaiVqKpDbSRvGiRs373dUPhi/9K8A==}
+    hasBin: true
+    dependencies:
+      2dec: 1.0.5
+      '@prettier/plugin-lua': 0.0.3(prettier@3.2.4)
+      '@robertsspaceindustries/sub': 1.0.8
+      commander: 11.1.0
+      klaw: 4.1.0
+      picocolors: 1.0.0
+      prettier: 3.2.4
+    dev: false
