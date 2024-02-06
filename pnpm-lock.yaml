@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   scribunto-bundler:
-    specifier: ^0.1.4
-    version: 0.1.4
+    specifier: ^0.1.5
+    version: 0.1.5
 
 packages:
 
@@ -54,8 +54,8 @@ packages:
     hasBin: true
     dev: false
 
-  /scribunto-bundler@0.1.4:
-    resolution: {integrity: sha512-F6JOSRWbS1OGGMC/UDcj0G33ay/ukYoBA2iS5ZYyAHLVlzkNFlJcaLVrjCjKaErjPNJdltfBcCGG436xgbePVA==}
+  /scribunto-bundler@0.1.5:
+    resolution: {integrity: sha512-VYbiTyHFceLEkJeUtSLz7fcUgdexaDmEcUqHFGG4ZeCrBOhJK5wp6mMUtAm1T7cnlsnfOl0jFShqkkOe/9DBFg==}
     hasBin: true
     dependencies:
       2dec: 1.0.5

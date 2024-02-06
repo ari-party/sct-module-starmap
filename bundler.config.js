@@ -1,10 +1,10 @@
 /** @type {import("scribunto-bundler").Config} */
 export default {
-  prefix: `
+  prefix:
+    `
 -- Code bundled using https://github.com/ari-party/scribunto-bundler
 -- Find module source code at https://github.com/ari-party/sct-module-starmap
-  `.trim(),
-  suffix: "",
+  `.trim() + "\n",
 
   main: "src/main.lua",
   out: "dist/bundled.lua",
