@@ -142,6 +142,28 @@ function Starmap.systemObjects(systemName)
     return systemObjects
 end
 
+--- Get the objects of a system
+---@param id number The structure id
+---@param isSystem boolean If the id is a system's
+---@deprecated
+function Starmap.children(id, isSystem)
+    if id == nil then return nil end
+
+    local objects = data.objects
+    local children = {}
+
+    local targetKey = 'parent_id'
+    if isSystem == true then targetKey = 'star_system_id' end
+
+    for _, object in ipairs(objects) do
+        if object[targetKey] == id then
+            table.insert(children, object)
+        end
+    end
+
+    return children
+end
+
 ---@param frame table https://www.mediawiki.org/wiki/Extension:Scribunto/Lua_reference_manual#Frame_object
 function Starmap.main(frame)
     local args = frame:getParent().args
