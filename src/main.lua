@@ -27,13 +27,13 @@ end
 ---@alias object { affiliation: table, age: number, code: string, designation: string, id: number, sensor_danger: number, sensor_economy: number, sensor_population: number, size: number, star_system: table, star_system_id: number, subtype: table, type: string }
 
 --- Create a starmap link from arguments
----@param location string Location param
----@param system? string System param, only added if the `location` argument is present
-function Starmap.link(location, system)
+---@param locationName string Location param
+---@param systemName? string System param, only added if the `location` argument is present
+function Starmap.link(locationName, systemName)
     local str = config.starmap .. '?'
 
-    if location then str = str .. 'location=' .. location end
-    if location and system then str = str .. '&' .. 'system=' .. system end
+    if locationName then str = str .. 'location=' .. locationName end
+    if locationName and systemName then str = str .. '&' .. 'system=' .. systemName end
 
     return str
 end
