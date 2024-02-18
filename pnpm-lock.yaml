@@ -6,23 +6,13 @@ settings:
 
 dependencies:
   scribunto-bundler:
-    specifier: ^0.1.5
-    version: 0.1.5
+    specifier: ^0.2.0
+    version: 0.2.0
 
 packages:
 
   /2dec@1.0.5:
     resolution: {integrity: sha512-vvSukjA2zR2eTRy/TqpIliCS9GccGPEGPgRLl+JXr3XvH2lzTwNW4jO4GAjnv+F22wK0cCiD7nZ4pX0pvHd1jg==}
-    dev: false
-
-  /@prettier/plugin-lua@0.0.3(prettier@3.2.5):
-    resolution: {integrity: sha512-Fn7rf/9BTisEShgSN7iSKxgBo3MkHnAptNI7+4JC7E3wi2ElfzcR194QswblbY6X0fTdaHz3yG0GQcuwtxZKoQ==}
-    engines: {node: '>=10.13.0'}
-    peerDependencies:
-      prettier: '>=2.0.0'
-    dependencies:
-      luaparse: 0.2.1
-      prettier: 3.2.5
     dev: false
 
   /@robertsspaceindustries/sub@1.0.8:
@@ -39,8 +29,9 @@ packages:
     engines: {node: '>=14.14.0'}
     dev: false
 
-  /luaparse@0.2.1:
-    resolution: {integrity: sha512-VKBcryd5nJte4ZNR29NOk8F/UkMipjeb4yoxcSS51z6QAzg9DXUC2WsfLniS0J1eh3pr/ZL3e9ha6V8fhoLbBQ==}
+  /nanoid@5.0.5:
+    resolution: {integrity: sha512-/Veqm+QKsyMY3kqi4faWplnY1u+VuKO3dD2binyPIybP31DRO29bPF+1mszgLnrR2KqSLceFLBNw0zmvDzN1QQ==}
+    engines: {node: ^18 || >=20}
     hasBin: true
     dev: false
 
@@ -48,21 +39,14 @@ packages:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
     dev: false
 
-  /prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
-    engines: {node: '>=14'}
-    hasBin: true
-    dev: false
-
-  /scribunto-bundler@0.1.5:
-    resolution: {integrity: sha512-VYbiTyHFceLEkJeUtSLz7fcUgdexaDmEcUqHFGG4ZeCrBOhJK5wp6mMUtAm1T7cnlsnfOl0jFShqkkOe/9DBFg==}
+  /scribunto-bundler@0.2.0:
+    resolution: {integrity: sha512-jjiNMh+fGwvfzuYSBSLaoVUkOEvA6Y/f1+2qiZpg311m/cacufvLFXpNcFrLc4QO7bdY0PZpcVNGQBUkR1qeig==}
     hasBin: true
     dependencies:
       2dec: 1.0.5
-      '@prettier/plugin-lua': 0.0.3(prettier@3.2.5)
       '@robertsspaceindustries/sub': 1.0.8
       commander: 11.1.0
       klaw: 4.1.0
+      nanoid: 5.0.5
       picocolors: 1.0.0
-      prettier: 3.2.5
     dev: false
