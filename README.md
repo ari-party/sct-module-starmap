@@ -1,4 +1,4 @@
-# DeclarativeUI
+# Starmap
 
 > [!NOTE]  
 > View more information on [the Star Citizen Wiki](https://starcitizen.tools/Module:Starmap).
