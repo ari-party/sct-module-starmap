@@ -24,13 +24,7 @@
   "%systems": "System star types",
   "systems": ["SINGLE_STAR", "BINARY"],
 
-  "%type_plural": "A structure type but plural",
-  "type_plural": {
-    "system": "systems",
-    "object": "objects"
-  },
-
-  "%link_overwrites": "Overwrite the page name for structure codes.",
+  "%link_overwrites": "Overwrite the page name for object codes.",
   "link_overwrites": {
     "STANTON.PLANETS.STANTONIVMICROTECH": "microTech (planet)|microTech"
   }
