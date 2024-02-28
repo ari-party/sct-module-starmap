@@ -3,6 +3,7 @@ local t = require( 'translate' )
 local tableUtil = require( 'util.table' )
 local stringUtil = require( 'util.string' )
 local findStructure = require( 'lib.findStructure' )
+local inSystem = require( 'lib.inSystem' )
 
 --- E.g.: [[Planet]], orbits [[Star]], in [[System]]
 ---@param target table Target structure
@@ -25,10 +26,7 @@ return function ( target )
             ---@diagnostic disable-next-line: assign-type-mismatch
             parent = parent
 
-            local linkContent = config.link_overwrites[ parent.code ] or
-                stringUtil.removeParentheses( parent.name ) .. ' system'
-
-            table.insert( links, mw.ustring.format( t( 'in_system' ), '[[' .. linkContent .. ']]' ) )
+            table.insert( links, inSystem( parent ) )
         else
             ---@type object
             ---@diagnostic disable-next-line: assign-type-mismatch

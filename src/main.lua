@@ -4,10 +4,11 @@
 local Starmap = {
     children = require( 'lib.children' ),
     findStructure = require( 'lib.findStructure' ),
+    inSystem = require( 'lib.inSystem' ),
     link = require( 'lib.link' ),
     pathTo = require( 'lib.pathTo' ),
     systemObjects = require( 'lib.systemObjects' )
-}
+} 
 
 local t = require( 'translate' )
 local stringUtil = require( 'util.string' )
