@@ -8,7 +8,7 @@ return function ( systemName )
     local system = findStructure( 'system', systemName )
     if system == nil then return nil end -- System doesn't exist
 
-    systemName = string.lower( systemName )
+    systemName = mw.ustring.lower( systemName )
 
     local objects = data.objects
     local systemObjects = {}

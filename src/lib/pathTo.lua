@@ -28,7 +28,7 @@ return function ( target )
             local linkContent = config.link_overwrites[ parent.code ] or
                 stringUtil.removeParentheses( parent.name ) .. ' system'
 
-            table.insert( links, string.format( t( 'in_system' ), '[[' .. linkContent .. ']]' ) )
+            table.insert( links, mw.ustring.format( t( 'in_system' ), '[[' .. linkContent .. ']]' ) )
         else
             ---@type object
             ---@diagnostic disable-next-line: assign-type-mismatch
@@ -40,7 +40,7 @@ return function ( target )
                 local linkContent = config.link_overwrites[ parent.code ] or
                     designation .. ' (star)|' .. designation .. ' star'
 
-                table.insert( links, string.format( t( 'orbits_star' ), '[[' .. linkContent .. ']]' ) )
+                table.insert( links, mw.ustring.format( t( 'orbits_star' ), '[[' .. linkContent .. ']]' ) )
             else
                 local linkContent = config.link_overwrites[ parent.code ] or
                     -- LuaLS doesn't see the field??
@@ -57,6 +57,6 @@ return function ( target )
     processStructure( target )
 
     local sentence = table.concat( links, ', ' )
-    sentence = string.gsub( sentence, '^%l', string.upper )
+    sentence = mw.ustring.gsub( sentence, '^%l', mw.ustring.upper )
     return sentence
 end
