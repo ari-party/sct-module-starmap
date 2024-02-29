@@ -4,13 +4,15 @@ local pluralize = require( 'util.pluralize' )
 --- Look for a structure in starmap
 --- A structure can be an astronomical anomaly
 ---@param structureType string The type of structure (system/object)
----@param structureIdentifier string The name/code/designation/id of the structure in Star Citizen
+---@param structureIdentifier string | number The name/code/designation/id of the structure in Star Citizen
 ---@return nil | system | object
 return function ( structureType, structureIdentifier )
     local structures = data[ pluralize( structureType ) ]
     if structures == nil then return nil end -- Invalid type
 
-    structureIdentifier = mw.ustring.lower( structureIdentifier )
+    if type( structureIdentifier ) == 'string' then
+        structureIdentifier = mw.ustring.lower( structureIdentifier )
+    end
 
     for _, structure in ipairs( structures ) do
         if
