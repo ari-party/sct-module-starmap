@@ -26,6 +26,11 @@
 
   "%link_overwrites": "Overwrite the page name for object codes.",
   "link_overwrites": {
-    "STANTON.PLANETS.STANTONIVMICROTECH": "microTech (planet)|microTech"
+    "STANTON.PLANETS.STANTONIVMICROTECH": "microTech (planet)|microTech",
+
+    "TAL": "T.āl system",
+    "TAL.STARS.TAL": "T.āl (star)|T.āl star",
+    "TAL.JUMPPOINTS.PALLAS": "T.āl - Th.us'ūng (Pallas)|T.āl - Th.us'ūng",
+    "PALLAS.JUMPPOINTS.TAL": "Th.us'ūng (Pallas) - T.āl|Th.us'ūng - T.āl"
   }
 }

@@ -1,7 +1,6 @@
 local config = mw.loadJsonData( 'Module:Starmap/config.json' )
 local t = require( 'translate' )
 local stringUtil = require( 'util.string' )
-local findStructure = require( 'lib.findStructure' )
 
 ---@param system system
 ---@return string
